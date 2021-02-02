@@ -1,0 +1,44 @@
+{% load static %}
+{% load menu %}
+<header>
+    <!-- Navbar
+  ================================================== -->
+    <div class="navbar navbar-static-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <!-- logo -->
+                <div class="logo">
+                    <a href="{% url 'home' %}"><img src="{% static 'assets/img/logo.png' %}" alt=""/></a>
+                </div>
+                <!-- end logo -->
+
+                <!-- top menu -->
+                <div class="navigation">
+                    <nav>
+                        <ul class="nav topnav">
+                            <li>
+                                <a href="{% url 'home' %}"><i class="icon-home"></i> Home </a>
+                            </li>
+
+                            {% show_menu_portfolio %}
+
+                            <li>
+                                {% show_menu_blog %}
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="{% url 'about' %}"><i class="icon-leaf"></i> About us</a>
+                            </li>
+
+                            <li>
+                                <a href="{% url 'contact' %}"><i class="icon-envelope-alt"></i> Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- end menu -->
+
+            </div>
+        </div>
+    </div>
+</header>

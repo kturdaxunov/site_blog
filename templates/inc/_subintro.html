@@ -1,0 +1,23 @@
+{% load static %}
+<section id="subintro">
+    <div class="container">
+        <div class="row">
+
+            <div class="span8">
+                <ul class="breadcrumb">
+
+                </ul>
+            </div>
+
+            <div class="span4">
+                <div class="search">
+                    <form class="input-append" action="{% url 'search' %}" method="get">
+                        <input class="search-form" id="appendedPrependedInput" name="s" type="text"
+                               placeholder="Search here.."/>
+                        <button class="btn btn-dark" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

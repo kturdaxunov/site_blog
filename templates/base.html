@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}Kairos{% endblock %}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- styles -->
+  <link href="{% static 'assets/css/bootstrap.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/css/bootstrap-responsive.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/css/prettyPhoto.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/js/google-code-prettify/prettify.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/css/flexslider.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/color/default.css' %}" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,600,400italic|Open+Sans:400,600,700" rel="stylesheet">
+
+  <!-- fav and touch icons -->
+  <link rel="shortcut icon" href="{% static 'assets/ico/favicon.ico' %}">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{% static 'assets/ico/apple-touch-icon-144-precomposed.png' %}">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="{% static 'assets/ico/apple-touch-icon-114-precomposed.png' %}">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="{% static 'assets/ico/apple-touch-icon-72-precomposed.png' %}">
+  <link rel="apple-touch-icon-precomposed" href="{% static 'assets/ico/apple-touch-icon-57-precomposed.png' %}">
+  
+</head>
+
+
+<body>
+  <div id="wrapper">
+
+
+    {% include 'inc/_header.html' %}
+
+
+    {% block content %}{% endblock %}
+
+
+    {% include 'inc/_footer.html' %}
+
+
+  </div>
+  <!-- end wrapper -->
+  <a href="#" class="scrollup"><i class="icon-chevron-up icon-square icon-48 active"></i></a>
+
+  <script src="{% static 'assets/js/jquery.js' %}"></script>
+  <script src="{% static 'assets/js/raphael-min.js' %}"></script>
+  <script src="{% static 'assets/js/jquery.easing.1.3.js' %}"></script>
+  <script src="{% static 'assets/js/bootstrap.js' %}"></script>
+  <script src="{% static 'assets/js/google-code-prettify/prettify.js' %}"></script>
+  <script src="{% static 'assets/js/jquery.elastislide.js' %}"></script>
+  <script src="{% static 'assets/js/jquery.prettyPhoto.js' %}"></script>
+  <script src="{% static 'assets/js/jquery.flexslider.js' %}"></script>
+  <script src="{% static 'assets/js/jquery-hover-effect.js' %}"></script>
+  <script src="{% static 'assets/js/animate.js' %}"></script>
+
+  <!-- Template Custom JavaScript File -->
+  <script src="{% static 'assets/js/custom.js' %}"></script>
+
+</body>
+</html>
